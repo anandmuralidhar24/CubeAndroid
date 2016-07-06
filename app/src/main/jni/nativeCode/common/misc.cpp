@@ -37,7 +37,7 @@ std::string GetFileName(std::string file_name) {
 /**
  * Print the contents of a Glm 4x4 matrix
  */
-void PrintGlmMat(glm::mat4 testMat) {
+void PrintGLMMat4(glm::mat4 testMat) {
 
     MyLOGD("%f %f %f %f", testMat[0][0],testMat[1][0],testMat[2][0],testMat[3][0]);
     MyLOGD("%f %f %f %f", testMat[0][1],testMat[1][1],testMat[2][1],testMat[3][1]);

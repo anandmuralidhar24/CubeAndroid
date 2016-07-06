@@ -14,13 +14,14 @@
  *    limitations under the License.
  */
 
-attribute   vec3 vertexPosition;
-attribute   vec3 vertexColor;
-varying     vec3 fragmentColor;     // this is 'sent' to the fragment shader
-uniform     mat4 mvpMat;
 
-void main()
-{
-    gl_Position     = mvpMat * vec4(vertexPosition, 1.0);
-    fragmentColor   = vertexColor;
-}
+#ifndef MYGLM_H
+#define MYGLM_H
+
+#define GLM_FORCE_RADIANS
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/quaternion.hpp>
+#include <glm/gtx/quaternion.hpp>
+
+#endif //MYGLM_H

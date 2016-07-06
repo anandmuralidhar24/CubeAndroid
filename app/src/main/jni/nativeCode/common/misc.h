@@ -20,9 +20,9 @@
 #include <stdio.h>
 #include <string>
 #include "myLogger.h"
-#include "myGlm.h"
+#include "myGLM.h"
 
 std::string GetFileName(std::string file_name);
-void PrintGlmMat(glm::mat4 testMat);
+void PrintGLMMat4(glm::mat4 testMat);
 
 #endif //MISC_H

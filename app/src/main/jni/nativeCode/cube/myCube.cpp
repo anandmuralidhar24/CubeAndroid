@@ -149,7 +149,7 @@ void MyCube::PerformGLInits() {
     // fetch the locations of "vertexPosition" and "vertexColor" from the shader
     vertexAttribute = GetAttributeLocation(shaderProgramID, "vertexPosition");
     colorAttribute  = GetAttributeLocation(shaderProgramID, "vertexColor");
-    MVPLocation     = GetUniformLocation(shaderProgramID, "MVP");
+    MVPLocation     = GetUniformLocation(shaderProgramID, "mvpMat");
 
     CheckGLError("Cube::PerformGLInits");
     initsDone = true;
@@ -162,8 +162,8 @@ void MyCube::RenderCube() {
     // use the shader
     glUseProgram(shaderProgramID);
 
-    glm::mat4 MVP = myGLCamera->GetMVP();
-    glUniformMatrix4fv(MVPLocation, 1, GL_FALSE, (const GLfloat *) &MVP);
+    glm::mat4 mvpMat = myGLCamera->GetMVP();
+    glUniformMatrix4fv(MVPLocation, 1, GL_FALSE, (const GLfloat *) &mvpMat);
 
     // enable the vertex buffer
     glEnableVertexAttribArray(vertexAttribute);

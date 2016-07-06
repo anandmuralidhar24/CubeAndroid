@@ -1,6 +1,12 @@
 CubeAndroid
 ===============
+In this project, we explore an important concept in OpenGL ES; the **Model**-**View**-**Projection** or **MVP** matrix. We will understand:
+- The three matrices that comprise a **MVP** matrix
+- How to use the OpenGL Mathematics (GLM) library to generate the **MVP** matrix.
+- How to move a colored cube with touch gestures.
 
+A blog describing this project:
+http://www.anandmuralidhar.com/blog/android/mvp-glm-touch
 
 License
 -------
