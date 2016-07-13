@@ -31,9 +31,6 @@ void MyGLInits() {
     // Accept fragment if it closer to the camera than the former one
     glDepthFunc(GL_LEQUAL);
 
-    // Cull triangles which normal is not towards the camera
-    glEnable(GL_CULL_FACE);
-
     MyLOGI("OpenGL %s, GLSL %s", glGetString(GL_VERSION), glGetString(GL_SHADING_LANGUAGE_VERSION));
 
     // check if the device supports GLES 3 or GLES 2

@@ -51,8 +51,10 @@ MyGLCamera::MyGLCamera(
 void MyGLCamera::SetAspectRatio(float aspect) {
 
     glm::mat4 projectionMat;
-    projectionMat = glm::perspective(FOV * float(M_PI / 180), aspect,
-                                     nearPlaneDistance, farPlaneDistance);
+    projectionMat = glm::perspective(FOV * float(M_PI / 180), // camera's field-of-view
+                                     aspect,                  // camera's aspect ratio
+                                     nearPlaneDistance,       // distance to the near plane
+                                     farPlaneDistance);       // distance to the far plane
     projectionViewMat = projectionMat * viewMat;
     ComputeMVPMatrix();
 
