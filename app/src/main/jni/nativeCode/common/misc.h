@@ -22,7 +22,7 @@
 #include "myLogger.h"
 #include "myGLM.h"
 
-std::string GetFileName(std::string file_name);
+std::string GetFileName(std::string fileName);
 void PrintGLMMat4(glm::mat4 testMat);
 
 #endif //MISC_H

@@ -22,7 +22,7 @@ model {
 
         ndk {
             platformVersion = 19
-            moduleName = 'CubeNative' // this creates libTeapotNative.so and should be loaded in Java
+            moduleName = 'CubeNative' // this creates libCubeNative.so and should be loaded in Java
             stl       = 'gnustl_static'
 
             // specify the path to jni code

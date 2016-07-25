@@ -46,9 +46,6 @@ MyCube::~MyCube() {
 void MyCube::PerformGLInits() {
 
     MyLOGD("MyCube::PerformGLInits");
-    if (initsDone) {
-        return;
-    }
 
     MyGLInits();
 

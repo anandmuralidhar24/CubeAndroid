@@ -19,19 +19,19 @@
 /**
  * Strip out the path and return just the filename
  */
-std::string GetFileName(std::string file_name) {
+std::string GetFileName(std::string fileName) {
 
     // assume filename is of the form "<path>/<name>.<type>"
-    std::string::size_type slashIndex = file_name.find_last_of("/");
+    std::string::size_type slashIndex = fileName.find_last_of("/");
 
-    std::string only_name;
+    std::string onlyName;
     if (slashIndex == std::string::npos) {
-        only_name = file_name.substr(0, std::string::npos);
+        onlyName = fileName.substr(0, std::string::npos);
     } else {
-        only_name = file_name.substr(slashIndex + 1, std::string::npos);
+        onlyName = fileName.substr(slashIndex + 1, std::string::npos);
     }
 
-    return only_name;
+    return onlyName;
 }
 
 /**
