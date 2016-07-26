@@ -138,8 +138,8 @@ void MyCube::PerformGLInits() {
     glBufferData(GL_ARRAY_BUFFER, sizeof(cubeFaceColors), cubeFaceColors, GL_STATIC_DRAW);
 
     // shader related setup
-    std::string vertexShader    = "cubeMVP.vsh";
-    std::string fragmentShader  = "cubeMVP.fsh";
+    std::string vertexShader    = "shaders/cubeMVP.vsh";
+    std::string fragmentShader  = "shaders/cubeMVP.fsh";
 
     // compile the vertex and fragment shaders, and link them together
     shaderProgramID = LoadShaders(vertexShader, fragmentShader);
