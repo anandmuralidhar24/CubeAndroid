@@ -14,6 +14,8 @@
  *    limitations under the License.
  */
 
+precision mediump float; // required in GLSL 100
+
 varying vec3 fragmentColor; // this is interpolated across vertices
 
 void main()
